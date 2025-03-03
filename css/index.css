@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+:root {
+    --color-bg: #000;
+    --color-fg: #fff;
+}
+
+body {
+    background: var(--color-bg);
+    color: var(--color-fg);
+    height: 100vh;
+    overflow: hidden;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+#particles-js {
+    height: 100vh;
+}
+
+.content {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo {
+    display: block;
+    object-fit: contain;
+    width: 180px;
+    height: 180px;
+    margin-bottom: 30px;
+}
+
+.social-media {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-media a {
+    display: block;
+    padding: 5px;
+    background: var(--color-fg);
+    margin: 0 5px;
+    border-radius: 10px;
+    transition: transform .1s;
+}
+
+.social-media a img {
+    display: block;
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}
+
+.social-media a:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.social-media a:active {
+    transform: scale(.9);
+}
